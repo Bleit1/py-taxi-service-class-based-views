@@ -15,6 +15,8 @@ class Manufacturer(models.Model):
 
 class Driver(AbstractUser):
     license_number = models.CharField(max_length=255, unique=True)
+
+
 class Car(models.Model):
     model = models.CharField(max_length=255)
     manufacturer = models.ForeignKey(
