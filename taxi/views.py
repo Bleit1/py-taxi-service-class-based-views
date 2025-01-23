@@ -42,9 +42,7 @@ class DriverListView(generic.ListView):
 
 class DriverDetailView(generic.DetailView):
     model = Driver
-    queryset = Driver.objects.all()
 
 
 class ManufacturerDetailView(generic.DetailView):
     model = Manufacturer
-    queryset = Manufacturer.objects.all()
